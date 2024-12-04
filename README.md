@@ -18,7 +18,7 @@ Detailed description on how to install wireguard on to an ubuntu droplet
 * Install the dependencies/packages needed to run docker. Commands: sudo apt install docker, sudo apt install docker-compose, sudo apt install wireguard
 * Set up Wireguard using Docker Compose: 
 * Create a directory for Wireguard: 
-* <span style="color:blue">mkdir -p /opt/wireguard</span>
+* <span style="color:red">mkdir -p /opt/wireguard</span>
 * cd /opt/wireguard
  
 * Create a docker-compose.yml file: 
