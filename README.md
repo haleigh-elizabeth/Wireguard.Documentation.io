@@ -2,16 +2,16 @@
 Detailed description on how to install wireguard on to an ubuntu droplet 
 
 ## **Project 3 - Wireguard Docker Container**
-###<ins>Step 1: Create a Droplet in DigitalOcean</ins>
+### <ins>Step 1: Create a Droplet in DigitalOcean</ins>
 
-⋅⋅*Create a Digital Ocean account
-⋅⋅*Use this link to DigitalOcean.com to sign up with your school email and Agent Miller’s credit card
-⋅⋅*Choose the lowest price tier - $6 per month
-⋅⋅*Create an Ubuntu droplet
-⋅⋅*Select all of the basic options
-⋅⋅*Choose password instead of ssh key - TulsaTime@1865edu
-⋅⋅*Name the project - Wireguard project
-⋅⋅*Droplet IP - 64.23.171.188
+⋅⋅* Create a Digital Ocean account
+⋅⋅* Use this link to DigitalOcean.com to sign up with your school email and Agent Miller’s credit card
+⋅⋅* Choose the lowest price tier - $6 per month
+⋅⋅* Create an Ubuntu droplet
+⋅⋅* Select all of the basic options
+⋅⋅* Choose password instead of ssh key - TulsaTime@1865edu
+⋅⋅* Name the project - Wireguard project
+⋅⋅* Droplet IP - 64.23.171.188
 
 ### <ins>Step 2: Install Wireguard</ins>
 ⋅⋅*SSH into the droplet by opening a terminal and typing ssh root@[ip]
