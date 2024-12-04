@@ -103,11 +103,10 @@ Endpoint = 45.55.41.235:51820<br/>
 
 
 ### Screenshots:
+* See attached files for testing before and after on both PC and Phone 
 
 
 
-
-![Screenshot](/Users/halei/OneDrive/Pictures/Picture1.png "Screenshot")
 
 
 
