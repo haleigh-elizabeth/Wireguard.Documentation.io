@@ -4,7 +4,7 @@ Detailed description on how to install wireguard on to an ubuntu droplet
 ## **Project 3 - Wireguard Docker Container**
 ### <ins>Step 1: Create a Droplet in DigitalOcean</ins>
 
-* Create a Digital Ocean account* Use this link to DigitalOcean.com to sign up with your school email and Agent Miller’s credit card
+* Create a Digital Ocean account* Use this link to (DigitalOcean.com) to sign up with your school email and Agent Miller’s credit card
 * Choose the lowest price tier - $6 per month
 * Create an Ubuntu droplet
 * Select all of the basic options
@@ -18,8 +18,7 @@ Detailed description on how to install wireguard on to an ubuntu droplet
 * Install the dependencies/packages needed to run docker. Commands: sudo apt install docker, sudo apt install docker-compose, sudo apt install wireguard
 * Set up Wireguard using Docker Compose: 
 * Create a directory for Wireguard: 
-* <span style="color:red">mkdir -p /opt/wireguard</span>
-<span style="color:red;">mkdir -p /opt/wireguard </span>
+* mkdir -p /opt/wireguard
 * cd /opt/wireguard
  
 * Create a docker-compose.yml file: 
