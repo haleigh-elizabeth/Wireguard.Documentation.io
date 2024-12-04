@@ -32,30 +32,30 @@ version: '3.8'<br/>
 services:<br/>
   &nbsp; wireguard:<br/>
     &nbsp;&nbsp; container_name: wireguard<br/>
-    image: linuxserver/wireguard<br/>
-    environment:<br/>
-      - PUID=1000<br/>
-      - PGID=1000<br/>
+    &nbsp;&nbsp; image: linuxserver/wireguard<br/>
+    &nbsp;&nbsp; environment:<br/>
+     &nbsp; - PUID=1000<br/>
+     &nbsp;&nbsp; - PGID=1000<br/>
       - TZ=American/New_York<br/>
       - SERVERURL=45.55.41.235<br/>
       - SERVERPORT=51820<br/>
       - PEERS=pc1,pc2,phone1<br/>
       - PEERDNS=auto<br/>
       - INTERNAL_SUBNET=10.0.0.0<br/>
-    ports:<br/>
+  &nbsp;&nbsp;  ports:<br/>
       - 51820:51820/udp<br/>
-    volumes:<br/>
+   &nbsp;&nbsp; volumes:<br/>
       - type: bind<br/>
         source: ./config/<br/>
         target: /config/<br/>
       - type: bind<br/>
         source: /lib/modules<br/>
         target: /lib/modules<br/>
-    restart: always<br/>
-    cap_add:<br/>
+   &nbsp;&nbsp; restart: always<br/>
+   &nbsp;&nbsp; cap_add:<br/>
       - NET_ADMIN<br/>
       - SYS_MODULE<br/>
-    sysctls:<br/>
+  &nbsp;&nbsp;  sysctls:<br/>
       - net.ipv4.conf.all.src_valid_mark=1<br/>
 
 
