@@ -67,7 +67,7 @@ services:<br/>
 * Check logs to get the QR code: 
 * docker logs wireguard <br/>
   
-### Step 3: Test Your VPN 
+### <ins>Step 3: Test Your VPN</ins>
 #### Mobile Device 
 * Open the Wireguard app and scan the QR code from the logs. 
 * Before connecting: 
