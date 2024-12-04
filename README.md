@@ -1,8 +1,8 @@
 # Wireguard.Documentation.io
 Detailed description on how to install wireguard on to an ubuntu droplet 
 
-## **Project 3 - Wireguard Docker Container**
-### <ins>Step 1: Create a Droplet in DigitalOcean</ins>
+## **Project 3 - Wireguard Docker Container**<br/>
+### <ins>Step 1: Create a Droplet in DigitalOcean</ins><br/>
 
 * Create a Digital Ocean account* Use this link to [DigitalOcean.com](https://www.digitalocean.com/?refcode=d33d59113ab6&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=CopyPaste) to sign up with your school email and Agent Miller’s credit card
 * Choose the lowest price tier - $6 per month
@@ -31,32 +31,32 @@ Detailed description on how to install wireguard on to an ubuntu droplet
 version: '3.8'<br/>
 services:<br/>
   wireguard:<br/>
-    container_name: wireguard
-    image: linuxserver/wireguard
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=American/New_York
-      - SERVERURL=45.55.41.235
-      - SERVERPORT=51820
-      - PEERS=pc1,pc2,phone1
-      - PEERDNS=auto
-      - INTERNAL_SUBNET=10.0.0.0
-    ports:
-      - 51820:51820/udp
-    volumes:
-      - type: bind
-        source: ./config/
-        target: /config/
-      - type: bind
-        source: /lib/modules
-        target: /lib/modules
-    restart: always
-    cap_add:
-      - NET_ADMIN
-      - SYS_MODULE
-    sysctls:
-      - net.ipv4.conf.all.src_valid_mark=1
+    container_name: wireguard<br/>
+    image: linuxserver/wireguard<br/>
+    environment:<br/>
+      - PUID=1000<br/>
+      - PGID=1000<br/>
+      - TZ=American/New_York<br/>
+      - SERVERURL=45.55.41.235<br/>
+      - SERVERPORT=51820<br/>
+      - PEERS=pc1,pc2,phone1<br/>
+      - PEERDNS=auto<br/>
+      - INTERNAL_SUBNET=10.0.0.0<br/>
+    ports:<br/>
+      - 51820:51820/udp<br/>
+    volumes:<br/>
+      - type: bind<br/>
+        source: ./config/<br/>
+        target: /config/<br/>
+      - type: bind<br/>
+        source: /lib/modules<br/>
+        target: /lib/modules<br/>
+    restart: always<br/>
+    cap_add:<br/>
+      - NET_ADMIN<br/>
+      - SYS_MODULE<br/>
+    sysctls:<br/>
+      - net.ipv4.conf.all.src_valid_mark=1<br/>
 
 
 * Save and exit. 
@@ -83,21 +83,21 @@ Turn on the Wireguard VPN and revisit IPLeak.net.
 * In our case the .conf file contained:
 
 [Interface]
-PrivateKey = iLwC8xbCzwVd5j9s7Et/72d6keAAVTlkmxcY/wX6Ako=
-ListenPort = 518
-.20
-Address = 10.0.0.2/32
-DNS = 10.0.0.1
+PrivateKey = iLwC8xbCzwVd5j9s7Et/72d6keAAVTlkmxcY/wX6Ako=<br/>
+ListenPort = 518<br/>
+.20<br/>
+Address = 10.0.0.2/32<br/>
+DNS = 10.0.0.1<br/>
 
 [Peer]
-PublicKey = P5GnsQQZk4X0KilGkKNg5ND/XZjV0KP7QDNuShSCcG4=
-PresharedKey = 5X6AWptfcPEHqhgi3nVlEb6vx833rLQic/ofI4TMy5s=
-AllowedIPs = 0.0.0.0/0, ::/0
-Endpoint = 45.55.41.235:51820
+PublicKey = P5GnsQQZk4X0KilGkKNg5ND/XZjV0KP7QDNuShSCcG4=<br/>
+PresharedKey = 5X6AWptfcPEHqhgi3nVlEb6vx833rLQic/ofI4TMy5s=<br/>
+AllowedIPs = 0.0.0.0/0, ::/0<br/>
+Endpoint = 45.55.41.235:51820<br/>
 
 
-Import the file into the Wireguard app or CLI. 
-Follow the same steps as mobile to confirm functionality using IPLeak.net. 
+* Import the file into the Wireguard app or CLI. <br/>
+* Follow the same steps as mobile to confirm functionality using IPLeak.net. <br/>
  
  
 
