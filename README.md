@@ -31,7 +31,7 @@ Detailed description on how to install wireguard on to an ubuntu droplet
 version: '3.8'<br/>
 services:<br/>
   &nbsp; wireguard:<br/>
-    >> container_name: wireguard<br/>
+    &nbsp;&nbsp; container_name: wireguard<br/>
     image: linuxserver/wireguard<br/>
     environment:<br/>
       - PUID=1000<br/>
