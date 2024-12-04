@@ -4,7 +4,7 @@ Detailed description on how to install wireguard on to an ubuntu droplet
 ## **Project 3 - Wireguard Docker Container**
 ### <ins>Step 1: Create a Droplet in DigitalOcean</ins>
 
-* Create a Digital Ocean account* Use this link to (DigitalOcean.com) to sign up with your school email and Agent Miller’s credit card
+* Create a Digital Ocean account* Use this link to [DigitalOcean.com](https://www.digitalocean.com/?refcode=d33d59113ab6&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=CopyPaste) to sign up with your school email and Agent Miller’s credit card
 * Choose the lowest price tier - $6 per month
 * Create an Ubuntu droplet
 * Select all of the basic options
