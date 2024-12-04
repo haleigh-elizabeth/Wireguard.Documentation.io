@@ -24,7 +24,7 @@ Detailed description on how to install wireguard on to an ubuntu droplet
 * Create a docker-compose.yml file: 
 * **nano docker-compose.yml**
  
-* Add the following configuration to docker-compose.yml: 
+* Add the following configuration to docker-compose.yml: <br/>
 
 **yaml  docker-compose.yml**
   GNU nano 8.1<br/>                                                        
