@@ -26,7 +26,7 @@ Detailed description on how to install wireguard on to an ubuntu droplet
  
 * Add the following configuration to docker-compose.yml: <br/>
 
-**yaml  docker-compose.yml**<br/>
+**yaml  docker-compose.yml**
   &nbsp; GNU nano 8.1<br/>                                                        
 version: '3.8'<br/>
 services:<br/>
@@ -34,29 +34,29 @@ services:<br/>
     &nbsp;&nbsp; container_name: wireguard<br/>
     &nbsp;&nbsp; image: linuxserver/wireguard<br/>
     &nbsp;&nbsp; environment:<br/>
-     &nbsp; - PUID=1000<br/>
+     &nbsp;&nbsp; - PUID=1000<br/>
      &nbsp;&nbsp; - PGID=1000<br/>
-      - TZ=American/New_York<br/>
-      - SERVERURL=45.55.41.235<br/>
-      - SERVERPORT=51820<br/>
-      - PEERS=pc1,pc2,phone1<br/>
-      - PEERDNS=auto<br/>
-      - INTERNAL_SUBNET=10.0.0.0<br/>
+     &nbsp;&nbsp; - TZ=American/New_York<br/>
+     &nbsp;&nbsp; - SERVERURL=45.55.41.235<br/>
+     &nbsp;&nbsp; - SERVERPORT=51820<br/>
+     &nbsp;&nbsp; - PEERS=pc1,pc2,phone1<br/>
+     &nbsp;&nbsp; - PEERDNS=auto<br/>
+     &nbsp;&nbsp; - INTERNAL_SUBNET=10.0.0.0<br/>
   &nbsp;&nbsp;  ports:<br/>
-      - 51820:51820/udp<br/>
+     &nbsp;&nbsp; - 51820:51820/udp<br/>
    &nbsp;&nbsp; volumes:<br/>
-      - type: bind<br/>
-        source: ./config/<br/>
-        target: /config/<br/>
-      - type: bind<br/>
-        source: /lib/modules<br/>
-        target: /lib/modules<br/>
+     &nbsp;&nbsp; - type: bind<br/>
+     &nbsp;&nbsp;  source: ./config/<br/>
+     &nbsp;&nbsp;   target: /config/<br/>
+     &nbsp;&nbsp;  - type: bind<br/>
+     &nbsp;&nbsp;   source: /lib/modules<br/>
+     &nbsp;&nbsp;    target: /lib/modules<br/>
    &nbsp;&nbsp; restart: always<br/>
    &nbsp;&nbsp; cap_add:<br/>
-      - NET_ADMIN<br/>
-      - SYS_MODULE<br/>
+     &nbsp;&nbsp; - NET_ADMIN<br/>
+     &nbsp;&nbsp; - SYS_MODULE<br/>
   &nbsp;&nbsp;  sysctls:<br/>
-      - net.ipv4.conf.all.src_valid_mark=1<br/>
+     &nbsp;&nbsp; - net.ipv4.conf.all.src_valid_mark=1<br/>
 
 
 * Save and exit. 
