@@ -18,19 +18,19 @@ Detailed description on how to install wireguard on to an ubuntu droplet
 * Install the dependencies/packages needed to run docker. Commands: sudo apt install docker, sudo apt install docker-compose, sudo apt install wireguard
 * Set up Wireguard using Docker Compose: 
 * Create a directory for Wireguard: 
-* mkdir -p /opt/wireguard
-* cd /opt/wireguard
+* **mkdir -p /opt/wireguard**
+* **cd /opt/wireguard**
  
 * Create a docker-compose.yml file: 
-* nano docker-compose.yml
+* **nano docker-compose.yml**
  
 * Add the following configuration to docker-compose.yml: 
 
-yaml  docker-compose.yml
-  GNU nano 8.1                                                        
-version: '3.8'
-services:
-  wireguard:
+**yaml  docker-compose.yml**
+  GNU nano 8.1<br/>                                                        
+version: '3.8'<br/>
+services:<br/>
+  wireguard:<br/>
     container_name: wireguard
     image: linuxserver/wireguard
     environment:
@@ -62,7 +62,7 @@ services:
 * Save and exit. 
 
 * Run Wireguard: 
-* docker-compose up -d 
+* **docker-compose up -d**
  
 * Check logs to get the QR code: 
 * docker logs wireguard 
@@ -77,7 +77,7 @@ Turn on the Wireguard VPN and revisit IPLeak.net.
 * Screenshot the VPN IP to confirm it is active. 
 #### Laptop 
 * Find the configuration file: 
-* ls /opt/wireguard/config 
+* **ls /opt/wireguard/config**
  
 * Copy the .conf file to your laptop. 
 * In our case the .conf file contained:
@@ -102,7 +102,7 @@ Follow the same steps as mobile to confirm functionality using IPLeak.net.
  
 
 
-Screenshots:
+### Screenshots:
 
 
 
@@ -114,26 +114,26 @@ Screenshots:
 
 ***
 Documentation Completed by: 
-Ethan Belanger
-Jalen Brown
-Talha Choudhury
-Levi Dunsmore
-Haleigh Harris
-Elise Hill
-Oliver Johnson
-Braden Lavarnway
-Steven Lu
-Nolan Miller
-Kinlee Null
-James Oakes
-Devin Pattison
-Ben Pikul
-Anastasia Reed
-Ahmed Al Shaqsi
-Ahmad Sher
-Jacob Silberfarb
-Saniya Singh
-Kenji Tratnik
-Philip Tu
-Alex Watson
-Nuraiym Zhusupbekova
+* Ethan Belanger
+* Jalen Brown
+* Talha Choudhury
+* Levi Dunsmore
+* Haleigh Harris
+* Elise Hill
+* Oliver Johnson
+* Braden Lavarnway
+* Steven Lu
+* Nolan Miller
+* Kinlee Null
+* James Oakes
+* Devin Pattison
+* Ben Pikul
+* Anastasia Reed
+* Ahmed Al Shaqsi
+* Ahmad Sher
+* Jacob Silberfarb
+* Saniya Singh
+* Kenji Tratnik
+* Philip Tu
+* Alex Watson
+* Nuraiym Zhusupbekova
