@@ -13,8 +13,8 @@ Detailed description on how to install wireguard on to an ubuntu droplet
 * Droplet IP - 64.23.171.188
 
 ### <ins>Step 2: Install Wireguard</ins>
-* SSH into the droplet by opening a terminal and typing ssh root@[ip]
-* Where you would replace [ip] with the IP of your DigitalOcean Droplet
+* SSH into the droplet by opening a terminal and typing **ssh root@[ip]**
+&nbsp; * Where you would replace [ip] with the IP of your DigitalOcean Droplet
 * Install the dependencies/packages needed to run docker. Commands: sudo apt install docker, sudo apt install docker-compose, sudo apt install wireguard
 * Set up Wireguard using Docker Compose: 
 * Create a directory for Wireguard: 
@@ -27,7 +27,7 @@ Detailed description on how to install wireguard on to an ubuntu droplet
 * Add the following configuration to docker-compose.yml: <br/>
 
 **yaml  docker-compose.yml**
-  &nbsp; GNU nano 8.1<br/>                                                        
+GNU nano 8.1<br/>                                                        
 version: '3.8'<br/>
 services:<br/>
   &nbsp; wireguard:<br/>
