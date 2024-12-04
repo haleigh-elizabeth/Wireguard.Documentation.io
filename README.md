@@ -1,6 +1,6 @@
 # Wireguard.Documentation.io
 Detailed description on how to install wireguard on to an ubuntu droplet 
-Project 3 - Wireguard Docker Container
+**Project 3 - Wireguard Docker Container**
 Create a Digital Ocean account
 
 Create a Droplet in DigitalOcean
